@@ -75,7 +75,7 @@
               <li class="sidebar-item">
                 <a
                   class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="{{url('dashboard/user')}}"
+                  href="{{url('log-viewer')}}"
                   aria-expanded="false"
                   ><span class="hide-menu">Dashboard</span></a
                 >

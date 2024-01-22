@@ -10,13 +10,11 @@ use App\Models\User;
 class UserTest extends TestCase
 {
 
-    use RefreshDatabase;
-
     public function setUp() :void
     {
         parent::setUp();
 
-        User::factory(10)->create();
+        User::factory(1)->create();
     }
 
     /**
@@ -36,7 +34,7 @@ class UserTest extends TestCase
     {
         $response = $this->post('/create/user');
 
-        $response = DB::table('users')->get();
+        $response = DB::table('users')->first();
 
         dd($response);
     }
